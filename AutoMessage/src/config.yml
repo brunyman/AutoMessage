@@ -1,0 +1,61 @@
+#  ----------------------------------------------------
+#  AutoMessage Configuration File
+#  ----------------------------------------------------
+#  Message Configuration:
+#     Messages are handled in lists to allow for advanced customization!
+#     Feel free to add color codes by using & in your messages!
+#     To split a message onto multiple lines use the \n delimiter!
+#     Lines starting with / will be run as a command!
+#     To add single apostrophes into a message use ''.
+#     For a complete tutorial go to https://dev.bukkit.org/projects/automessage/pages/configuration-guide
+#     If you are unfamiliar with YAML use the in-game commands: /am help
+
+settings:
+  enabled: true
+  min-players: 0
+  log-to-console: false
+message-lists:
+  regular:
+    enabled: true
+    random: false
+    interval: 45
+    expiry: -1
+    messages:
+    - '&1First&r message \nin the default list!'
+    - '&2Second&r message \nin the default list!'
+    - '&3Third&r message \nin the default list!'
+    - 'These messages will be displayed to users with \nautomessage.receive.regular!'
+  json:
+    enabled: true
+    random: false
+    interval: 45
+    expiry: -1
+    messages:
+    - |-
+      {
+        "text": "Hover over me!",
+        "hoverEvent": {
+            "action": "show_text",
+            "value": [
+              {
+                "text": "&3Woah, you just hovered over me!"
+              }
+            ]
+        }
+      }
+    - |-
+      {
+        "text": "Click me to run a command!",
+        "clickEvent": {
+          "action": "run_command",
+          "value": "/say Clicked."
+        }
+      }
+    - |-
+      {
+        "text": "Click me to open Google!",
+        "clickEvent": {
+          "action": "open_url",
+          "value": "http://google.com"
+        }
+      }

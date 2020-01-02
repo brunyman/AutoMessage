@@ -1,0 +1,55 @@
+name: AutoMessage
+version: 2.6.0
+author: [ELCHILEN0, brunyman]
+description: Schedule easily configurable broadcasts!
+website: https://www.craftersland.net/
+main: com.TeamNovus.AutoMessage.AutoMessage
+api-version: 1.13
+load: STARTUP
+commands:
+   automessage:
+     description: Main command for all AutoMessage commands
+     aliases: [automsg, am]
+permissions:
+    commands.reload:
+        description: Reloads the configuration from the disk
+        default: op
+    automessage.commands.add:
+        description: Create a new message list or add a new message to the specified list at an optional index
+        default: op
+    automessage.commands.edit:
+        description: Edit a message in a specific message list at the specified index
+        default: op
+    automessage.commands.remove:
+        description: Remove the specified message list or a message from the specified message at the specified index
+        default: op
+    automessage.commands.enable:
+        description: Enable or disable server broadcasts for a specified message list
+        default: op
+    automessage.commands.interval:
+        description: Set the interval at which broadcasts are sent out for a specific message list
+        default: op
+    automessage.commands.expiry:
+        description: Set the time for the message list to expire. The format is d h m s.
+        default: op
+    automessage.commands.random:
+        description: Enable or disable random broadcasting for a specific message list
+        default: op
+    automessage.commands.prefix:
+        description: Set the broadcast prefix for a specified message list
+        default: op
+    automessage.commands.suffix:
+        description: Set the broadcast suffix for a specified message list
+        default: op
+    automessage.commands.broadcast:
+        description: Broadcast a message from a message list at the specified index
+        default: op
+    automessage.commands.list:
+        description: List all message lists or messages within a specific message list
+        default: op
+    automessage.receive.json:
+        description: Receive broadcasts from json message list, check config
+        default: op
+    automessage.receive.regular:
+        description: Receive broadcasts from regular message list, check config
+        default: op
