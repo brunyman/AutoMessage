@@ -7,7 +7,7 @@
 #     To split a message onto multiple lines use the \n delimiter!
 #     Lines starting with / will be run as a command!
 #     To add single apostrophes into a message use ''.
-#     For a complete tutorial go to https://dev.bukkit.org/projects/automessage/pages/configuration-guide
+#     For a complete tutorial go to https://www.spigotmc.org/resources/automessage-reloaded-configurable-automated-announcements.73967/
 #     If you are unfamiliar with YAML use the in-game commands: /am help
 
 settings:
